@@ -58,7 +58,7 @@ export default function AboutMe({ title, id }) {
                         by taking user input, converting it into the correct units, performing the user's
                         calculation and then outputting it with the units of the user's choice. This was
                         done by using object oriented programming, python libraries that stored basic
-                        unit conversions, and tagged data to display units EX: (1, 'cm'). Through implementing these three strategies I was able to successfully create a
+                        unit conversions, and tagged data to display units EX: (1, 'cm'). Through implementing these strategies I was able to successfully create a
                         program that is easy to use, manipulate, and further extend as the field of plasma physics further develops."
                         demoLink="https://github.com/kriishnaPat/PlasmaPhysicsCalculator"
                       />
@@ -78,7 +78,7 @@ export default function AboutMe({ title, id }) {
                         <ProjectCard
                           techUsed="HTML, CSS, Bootstrap, JavaScript, Figma"
                           title="PD11 Redevelopment"
-                          description="As a part of my first co-op term I was able to help in the redvelopment for the Professional Development 11 course at the university of waterloo. I created high-fidelity wireframes for the typography, buttons, carousels, cards, noteblocks, list group, accordion, embbeded videos, flipcard, and grid elements using figma. I then moved onto creating the button, statement block, grid and flip card elements using HTML, CSS, Bootstrap, and Javascript with a focus on creating a accessible and responsive design."
+                          description="As a part of my first co-op term I was able to help in the redvelopment for the Professional Development 11 course at the University of Waterloo. I created high-fidelity wireframes for the typography, buttons, carousels, cards, noteblocks, list group, accordion, embbeded videos, flipcard, and grid elements using figma. I then moved onto creating the button, statement block, grid and flip card elements using HTML, CSS, Bootstrap, and Javascript with a focus on creating a accessible and responsive design."
                           demoLink="https://github.com/kriishnaPat/PD11Redevelopment"
                         />
                         </Col>
@@ -86,9 +86,9 @@ export default function AboutMe({ title, id }) {
                 <div>
                         <Col className="col-12 project-card">
                         <ProjectCard
-                          techUsed="Python, React Native, mySQL"
-                          title="BookEase"
-                          description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
+                          techUsed="Flask, mySQL, Google Books API, HTML, CSS"
+                          title="BookLib"
+                          description="BookLib is a web application that I created for personal use. As an avid reader it is super helpful to have a singular database to store what books I am currently reading, want to read, and my reviews and ratings of books I've read in the past. I made this project using a relational database model with MySQL and implemented RESTful API's that work with Google Books API and add them to my personal library. It also uses a FLASK login system. In the future I also plan on using a Machine Learning Model to curate personalized book suggestions."
                           demoLink="https://github.com/kriishnaPat/BookEase"
                         />
                       </Col>
