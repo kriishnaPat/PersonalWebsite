@@ -1,56 +1,211 @@
 :root {
-  --off-white: #fafafa;
+  /* COLOURS */
+  --background:#77B5D9 ;
+  --font: #14397D;
+  --accent: #D7EAF3;
+
 }
-.nav {
-  background-color: var(--off-white);
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  height: 80px;
-  z-index: 1000;
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+
+p {
+  font-family: 'Poppins', sans-serif;
+  color:var(--font);
+}
+
+ul{
+  color: var(--font);
+}
+
+.nav{
+  background-color: var(--background);
 }
 
 .nav-logo {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  margin-left: 1em;
 }
 
 .nav-logo:hover {
   cursor: pointer;
 }
 
-.nav .nav-content {
-  max-width: 900px;
-  padding: 0rem 3rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+.nav-item{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-item {
-  display: inline;
-  margin-left: 2rem;
-  color: #333;
+  display: inline-block;
+  margin-left: 5rem;
+  color: var(--font);
+  font-family: 'Fira Code', monospace;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
-.nav-item:hover {
-  color: black;
+.nav-item:hover, .hover:hover{
   cursor: pointer;
+  color: var(--accent);
 }
 
-.section {
+.btn{
+  position: relative;
+  right: -10rem;
+  bottom: 5px;
+  color: var(--font) !important;
+  background-color: transparent !important;
+  font-family: 'Fira Code', monospace;
+  border-radius: 10px;
+  border-color: var(--accent) !important;
 }
 
-.section-dark {
-  background: #333;
-  color: white;
+.btn:hover{
+  background-color: var(--accent) !important;
 }
 
 .section-content {
-  max-width: 800px;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 40px;
+  height:100vh;
+  background-color: var(--background);
+}
+
+.nameIntro h3{
+  padding-top: 35vh;
+  font-family: 'Fira Code', monospace;
+  color: var(--font);
+}
+
+.nameIntro h1{
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--font);
+  font-size: 4rem;
+}
+
+.nameIntro h2{
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--font);
+  font-size: 3rem;
+}
+
+.nameIntro{
+  text-align: center;
+  height: 100vh;
+  background-image: radial-gradient( circle,  var(--accent),   var(--background), var(--font));
+}
+
+.down-arrow{
+  margin-top: 300px;
+  color: var(--accent);
+}
+
+.intro-subtitle, .begin-text{
+  color:var(--font);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0.5em;
+  font-size: xx-large;
+}
+
+.about h2{
+  font-family: 'Poppins', sans-serif;
+  color: var(--font);
+}
+
+.numbered-heading{
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+
+.numbered-heading::before{
+  margin-right: 20px;
+  content: "";
+  display: block;
+  position: relative;
+  top: -3px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--font);
+}
+
+.section-number{
+  color: var(--accent);
+  
+  font-family: 'Fira Code', monospace;
+  font-size: 2rem;
+}
+
+.numbered-heading::after{
+  content: "";
+  display: block;
+  position: relative;
+  top: -3px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--font);
+}
+
+.contact-link Button{
+  font-family: 'Fira Code', monospace;
+
+}
+
+.sidebar{
+  position: fixed;
+  color: var(--font);
+}
+
+.contact-icons{
+  left:2%;
+  top: 90%;
+  transform: translateY(-70%);
+}
+
+.contact-icons a{
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color:var(--font);
+}
+
+.contact-icons::after{
+  content: "";
+  display: block;
+  width: 3px;
+  height: 200px;
+  margin: 0px auto;
+  background-color: var(--accent);
+}
+
+.email {
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 0.05em;
+  top: 53%;
+  right: 2%;
+}
+
+.email a {
+  writing-mode: vertical-rl;
+  margin-left: 4px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color:var(--font);
+}
+
+.email::before {
+  content: "";
+  position: absolute;
+  top: 99%;
+  bottom: -200px;
+  height: 300px;
+  left: 50%;
+  border-left: 3px solid var(--accent);
 }

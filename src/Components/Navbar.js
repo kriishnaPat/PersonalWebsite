@@ -1,86 +1,73 @@
+import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import React, { Component } from "react";
-import logo from "../logo.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
+import logo from "../images/kp.svg";
+import Resume from "../images/Krishna_Patel_Resume.pdf"
 
-export default class Navbar extends Component {
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+export default class Navbar1 extends Component {
+    scrollToTop = () => {
+      scroll.scrollToTop();
+};
 
-  render() {
-    return (
-      <nav className="nav" id="navbar">
-        <div className="nav-content">
-          <img
+render() {
+  return (
+    <Navbar className='nav fixed-top' id='navbar' expand="md">
+        <Navbar.Brand 
+            href="#"><img
             src={logo}
             className="nav-logo"
-            alt="Logo"
+            alt="Logo."
             onClick={this.scrollToTop}
-          />
-          <ul className="nav-items">
-            <li className="nav-item">
-              <Link
+        /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="m-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Link 
+                className="nav-item"
                 activeClass="active"
                 to="section1"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-              >
-                Section 1
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
+                duration={500}>01. About Me</Link>
+            <Link
+                className="nav-item"
                 activeClass="active"
                 to="section2"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-              >
-                Section 2
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
+                duration={500}>02. Why Me</Link>
+            <Link 
+                className="nav-item"
                 activeClass="active"
                 to="section3"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-              >
-                Section 3
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
+                duration={500}>03. Projects
+            </Link>
+            <Link 
+                className="nav-item"
                 to="section4"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 4
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
                 activeClass="active"
-                to="section5"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-              >
-                Section 5
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    );
-  }
+                duration={500}>04. Contact
+            </Link>
+            <Link className="nav-item">
+              <Button className="btn float-right" href={Resume} src={Resume}>Resume</Button>
+            </Link>
+            </Nav>
+        </Navbar.Collapse>
+    </Navbar>
+  );
+}
 }
