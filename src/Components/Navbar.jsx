@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../images/kp.svg";
+import resume from "../images/Krishna_Patel_Resume.pdf"
 
 export default class Navbar1 extends Component {
     scrollToTop = () => {
@@ -65,7 +66,7 @@ render() {
             </Link>
             </Nav>
             <Link className="nav-item">
-              <Button className="top_btn">Resume</Button>
+              <Button className='top_btn' onClick={() => window.open(resume, '_blank')}>Resume</Button>
             </Link>
             </Navbar.Collapse>
             </Container>
