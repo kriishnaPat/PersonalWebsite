@@ -1,24 +1,22 @@
 import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/Home.js";
-import AboutMe from "./Components/AboutMe.js";
-import WhyMe from "./Components/WhyMe.js";
-import Projects from "./Components/Projects.js";
-import Contact from "./Components/Contact.js"
+import Home from "./Components/Home.jsx";
+import AboutMe from "./Components/AboutMe.jsx";
+import Projects from "./Components/Projects.jsx";
+import Contact from "./Components/Contact.jsx"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Navbar />
-        <Home />
-        <AboutMe
-          title='About Me'
+        <Home
+          title="Home"
           id="section1"
         />
-        <WhyMe
-          title="Why Me"
+        <AboutMe
+          title="About Me"
           id="section2"
         />
         <Projects

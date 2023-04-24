@@ -2,7 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import {Container, Row, Col} from 'react-bootstrap'
 
-function homePage() {
+export default function Home({ title, id }) {
     return (
     <div className="nameIntro">
       <Container className="
@@ -25,8 +25,6 @@ function homePage() {
                   <Typed
                     strings={[
                       " Computer Engineering Student",
-                      " Software Developer",
-                      " Entreprenuer",
                       " Mental Health Advocate",
                       " Schulich Leader"
                     ]}
@@ -40,16 +38,15 @@ function homePage() {
         </Col>
         </Row>
         <div className="sidebar contact-icons">
-          <a href="https://github.com/kriishnaPat" rel="noopener" target={"_blank"}><i class="fa-brands fa-github fa-2x hover"></i> </a>
-          <a href="https://www.linkedin.com/in/kriishna-p/" rel="noopener" target={"_blank"}><i class="fa-brands fa-linkedin fa-2x hover"></i></a>
-          <a href="mailto:kriishnapat@gmail.com" rel="noopener" target={"_blank"}><i class="fa-solid fa-envelope fa-2x hover"></i></a>
+          <a href="https://github.com/kriishnaPat" rel="noopener" ><i class="fa-brands fa-github fa-2x hover"></i></a>
+          <a href="https://www.linkedin.com/in/kriishna-p/" rel="noopener" ><i class="fa-brands fa-linkedin fa-2x hover"></i></a>
+          <a href="mailto:kriishnapat@gmail.com" rel="noopener" ><i class="fa-solid fa-envelope fa-2x hover"></i></a>
         </div>
         <div className="sidebar email">
-          <a className="hover"  href="mailto:kriishnapat@gmail.com" rel="noopener" target={"_blank"}>kriishnapat@gmail.com</a>
+          <a className="hover"  href="mailto:kriishnapat@gmail.com" rel="noopener">kriishnapat@gmail.com</a>
         </div>
       </Container>
     </div>
     )
   }
 
-export default homePage;
