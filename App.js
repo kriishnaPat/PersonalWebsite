@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home.jsx";
-import AboutMe from "./Components/AboutMe.jsx";
-import Projects from "./Components/Projects.jsx";
-import Contact from "./Components/Contact.jsx"
+import Navbar from "./src/Components/Navbar";
+import Home from "./src/Components/Home.jsx";
+import AboutMe from "./src/Components/AboutMe.jsx";
+import Projects from "./src/Components/Projects.jsx";
+import Contact from "./src/Components/Contact.jsx"
 
 class App extends Component {
   render() {
