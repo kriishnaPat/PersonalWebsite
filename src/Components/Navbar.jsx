@@ -2,10 +2,11 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import React, { Component } from "react";
+import React, { Component} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../images/kp.svg";
-import resume from "../images/Krishna_Patel_Resume.pdf"
+import resume from "../images/Krishna_Patel_Resume_2023.pdf"
+
 
 export default class Navbar1 extends Component {
     scrollToTop = () => {
@@ -13,6 +14,7 @@ export default class Navbar1 extends Component {
 };
 
 render() {
+  
   return (
     <Navbar className='nav fixed-top' id='navbar' expand="lg">
       <Container className="nav_container">
@@ -66,10 +68,10 @@ render() {
             </Link>
             </Nav>
             <Link className="nav-item">
-              <Button className='top_btn' onClick={() => window.open(resume, '_blank')}>Resume</Button>
-            </Link>
-            </Navbar.Collapse>
-            </Container>
+          <Button className='top_btn btn' onClick={() => window.open(resume)}>Resume</Button>
+          </Link>
+          </Navbar.Collapse>
+          </Container>
     </Navbar>
   );
 }

@@ -22,6 +22,15 @@ const responsive = {
   }
 };
 
+const CustomButtonGroup = ({ next, previous}) => {
+  return (
+    <div className="custom-button-group">
+      <button className="carousel-btn left-btn" onClick={() => previous()}><i class="fa-solid fa-chevron-left"></i></button>
+      <button className="carousel-btn right-btn" onClick={() => next()}><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  );
+};
+
 
 export default function AboutMe({ title, id }) {
   return (
@@ -36,8 +45,11 @@ export default function AboutMe({ title, id }) {
         <Row className='d-flex justify-content-center align-items-center'>
         <Carousel
   swipeable={true}
+  arrows={false} 
+  renderButtonGroupOutside={true}
+  customButtonGroup={<CustomButtonGroup />}
   draggable={true}
-  showDots={true}
+  showDots={false}
   responsive={responsive}
   ssr={true} // means to render carousel on server-side.
   infinite={true}

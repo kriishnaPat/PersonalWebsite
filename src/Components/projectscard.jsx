@@ -7,7 +7,7 @@ import React from "react";
 
 const ProjectCard = (props) => {
   return (
-    <Container className="pro_wrapper">
+    <Container className="pro_wrapper h-100">
     <Card className="project-card-view">
       <Card.Body>
         <Card.Title className="pro_header">{props.title}</Card.Title>
