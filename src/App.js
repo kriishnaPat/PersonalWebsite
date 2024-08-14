@@ -5,6 +5,7 @@ import Home from "./Components/Home.jsx";
 import AboutMe from "./Components/AboutMe.jsx";
 import Projects from "./Components/Projects.jsx";
 import Contact from "./Components/Contact.jsx"
+import Gallery from "./Components/Photos.jsx";
 
 class App extends Component {
   render() {
@@ -22,6 +23,10 @@ class App extends Component {
         <Projects
           title="Projects"
           id="section3"
+        />
+        <Gallery
+          title="Passions"
+          id="section5"
         />
         <Contact
           title="Contact"

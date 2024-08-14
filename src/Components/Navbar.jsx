@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import React, { Component} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../images/kp.svg";
-import resume from "../images/Krishna_Patel_Resume_2023.pdf"
+import resume from "../images/Krishna_Patel_Resume_co-op_2023.pdf"
 
 
 export default class Navbar1 extends Component {
@@ -59,12 +59,21 @@ render() {
             </Link>
             <Link 
                 className="nav-item"
+                to="section5"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}>04. Interest Gallery
+            </Link>
+            <Link 
+                className="nav-item"
                 to="section4"
                 activeClass="active"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}>04. Contact
+                duration={500}>05. Contact
             </Link>
             </Nav>
             <Link className="nav-item">
