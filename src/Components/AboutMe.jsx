@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "../images/KrishnaPhoto.jpg";
 import { Row, Col } from "react-bootstrap";
 
 export default function AboutMe({ title, id }) {

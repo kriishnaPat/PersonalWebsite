@@ -1,11 +1,9 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React, { Component} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../images/kp.svg";
-import resume from "../images/Krishna_Patel_Resume_co-op_2023.pdf"
 
 
 export default class Navbar1 extends Component {
