@@ -64,7 +64,7 @@ render() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}>04. Interest Gallery
+                duration={500}>04. Interest Gallery 
             </Link>
             <Link 
                 className="nav-item"
@@ -77,8 +77,7 @@ render() {
             </Link>
             </Nav>
             <Link className="nav-item">
-          <Button className='top_btn btn' onClick={() => window.open(resume)}>Resume</Button>
-          </Link>
+           </Link>
           </Navbar.Collapse>
           </Container>
     </Navbar>
