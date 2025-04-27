@@ -13,7 +13,7 @@ export default function AboutMe({ title, id }) {
         </Row>
         <Row className="text-justify-center d-flex justify-content-center pt-5">
           <Col className="col-12 col-md-6 text-center">
-            <p className="contact-text">Thank you for taking the time to learn about me and my experiences. I love to meet new people so please feel free to reach out just to say hi or if you have any questions! I am also currently seeking co-op oppurtunuties for Winter 2025 in software development or project managment.</p>
+            <p className="contact-text">Thank you for taking the time to learn about me and my experiences. I love to meet new people so please feel free to reach out just to say hi or if you have any questions! I am also currently seeking co-op opportunities for Fall 2025 in software development or project managment.</p>
           </Col>
         </Row>
         <Row className="text-justify-center d-flex justify-content-center pt-5">
